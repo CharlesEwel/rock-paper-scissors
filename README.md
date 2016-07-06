@@ -23,7 +23,8 @@ No known bugs.
 
 The program should ... | Example Input | Example Output
 ----- | ----- | -----
-Spec 1 | Example Input: | Example Output:
+Draws | Both Users Select Rock | It says there was a draw and resets
+Wins/Losses | User1 selects Rock, User 2 selects paper | User 2 is declared the victor
 
 ## Future Features
 
