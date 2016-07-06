@@ -1,12 +1,15 @@
 <head>
-  <link rel="stylesheet" href="Content/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="Content/styles.css" type="text/css">
+  <script src="Content/js/jquery-3.0.0.js"></script>
+  <script src="Content/js/scripts.js"></script>
+  <link rel="stylesheet" href="Content/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="Content/css/styles.css" type="text/css">
   <title>Rock, Paper, Scissors!</title>
 </head>
 <body>
   <form class="form-group" action="/shoot" method="post">
 <!-- Input 1 Start -->
     <div class="input1">
+      <h1>User1's turn. Hide your eyes User2.</h1>
       <div class="radio">
         <label>
           <input type="radio" name="input1" value="rock" checked>
@@ -25,9 +28,11 @@
           Scissors
         </label>
       </div>
+      <button type="button" name="button" id="next-user" class="btn btn-success">Switch to User2</button>
     </div>
 <!-- Input2 Start -->
     <div class="input2">
+      <h1>User2's turn. Hide your eyes User1.</h1>
       <div class="radio">
         <label>
           <input type="radio" name="input2" value="rock" checked>
@@ -46,8 +51,9 @@
           Scissors
         </label>
       </div>
+      <button type="submit" name="button" class="btn btn-success">Shoot!</button>
     </div>
-    <button type="submit" name="button" class="btn btn-success">Shoot!</button>
+
   </form>
   <div class="draw">
     <h2>@Model</h2>
