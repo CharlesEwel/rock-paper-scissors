@@ -1,0 +1,38 @@
+<head>
+  <script src="Content/js/jquery-3.0.0.js"></script>
+  <script src="Content/js/scripts.js"></script>
+  <link rel="stylesheet" href="Content/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="Content/css/styles.css" type="text/css">
+  <title>Rock, Paper, Scissors!</title>
+</head>
+<body>
+  <form class="form-group" action="/shoot1P" method="post">
+<!-- Input 1 Start -->
+    <div class="input-human">
+      <h1>Select wisely, the AI is very keen.</h1>
+      <div class="radio">
+        <label>
+          <input type="radio" name="inputhuman" value="rock" checked>
+          Rock
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="inputhuman" value="paper">
+          Paper
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="inputhuman" value="scissors">
+          Scissors
+        </label>
+      </div>
+      <button type="submit" name="button" class="btn btn-success">Shoot!</button>
+    </div>
+  </form>
+  <div class="outcome">
+    <h2>@Model</h2>
+  </div>
+  <a href="/">Return Home</a>
+</body>

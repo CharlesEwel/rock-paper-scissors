@@ -21,5 +21,23 @@ namespace RockPaperScissors.Objects
         return "User2 wins";
       }
     }
+    public string Shoot1P (string input1)
+    {
+      Random r = new Random();
+      List<string> possibilities = new List<string>{"rock", "paper", "scissors"};
+      string input2 = possibilities[r.Next(3)];
+      if (input1 == input2)
+      {
+        return "This round was a draw";
+      }
+      else if ((input1=="rock"&&input2=="scissors") || (input1=="scissors"&&input2=="paper") || (input1=="paper"&&input2=="rock"))
+      {
+        return "Human wins";
+      }
+      else
+      {
+        return "AI wins";
+      }
+    }
   }
 }

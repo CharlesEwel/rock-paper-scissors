@@ -3,5 +3,6 @@ $(document).ready(function(){
     event.preventDefault();
     $(".input1").toggle();
     $(".input2").toggle();
+    $(".outcome").toggle();
   });
 });
